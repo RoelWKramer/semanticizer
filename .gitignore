@@ -7,8 +7,10 @@
 *.pyc
 
 logs
-/log.txt
-
+log.txt
+*.log
+doc/docs/
+node_modules
 # Packages
 *.egg
 *.egg-info

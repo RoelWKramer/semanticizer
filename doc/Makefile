@@ -1,7 +1,8 @@
-doc: 
-	docco -l linear Semanticizer.js
-	docco -l linear advanced.js
-	docco -l linear learning.js
+doc:
+	npm install docco
+	node_modules/.bin/docco -l linear Semanticizer.js
+	node_modules/.bin/docco -l linear advanced.js
+	node_modules/.bin/docco -l linear learning.js
 
 all: doc
 
