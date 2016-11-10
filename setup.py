@@ -3,8 +3,10 @@
 from distutils.core import setup
 
 pkgs = (["semanticizer"] +
-        ["semanticizer." + sub for sub in ("processors", "redisinsert",
+        ["semanticizer." + sub for sub in ("processors", "dbinsert",
                                            "server", "util", "wpm")])
+#package_dir = {'': 'src'},
+#packages = find_packages('src'),
 
 setup(
     name="semanticizer",
@@ -18,11 +20,13 @@ setup(
     ],
     install_requires=[
         "flask",
-        "mock",
         "leven",
         "lxml",
+        "mock",
         "networkx",
+        "nltk",
         "numpy",
+        "pyyaml",
         "redis>=2.8.0",
         "scikit-learn",
         "simplejson",

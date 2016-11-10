@@ -14,10 +14,10 @@
 import logging
 from logging.handlers import TimedRotatingFileHandler
 
-from .. import procpipeline
-from ..config import config_get
-from ..server import Server
-from ..wpm.data import init_datasource
+from semanticizer import procpipeline
+from semanticizer.config import config_get
+from semanticizer.server import Server
+from semanticizer.wpm.data import init_datasource
 
 
 def start_server(langcodes,

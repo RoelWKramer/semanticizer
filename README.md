@@ -66,9 +66,8 @@ If you want to dive into the code, start at `semanticizer/server/__main__.py`.
    [Wikipedia Miner CSV files](http://sourceforge.net/projects/wikipedia-miner/files/data/).
 
 4. Copy one of the two config files in the `conf` folder to
-   `semanticizer.yml` in that folder and adapt to your situation. You
-   have the choice of loading all data into memory (use
-   `semanticizer.memory.yml`) or into [Redis](http://redis.io/) using
+   `semanticizer.yml` in that folder and adapt to your situation. Load all data 
+   into [Redis](http://redis.io/) using
    the following steps:
 
 	1. Copy `semanticizer.redis.yml` into `semanticizer.yml`.
@@ -85,6 +84,10 @@ If you want to dive into the code, start at `semanticizer/server/__main__.py`.
    its INSTALL for instructions. (configure, make, make
    install). Note that working with features is still under active
    development and therefore not fully documented and tested.
+
+## Notes
+
+The `memory` backend does not work for now.
 
 ## License
 
